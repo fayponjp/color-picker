@@ -23,10 +23,15 @@ select, button {
 
 button {
     font-size: 0.825rem;
+    cursor: pointer;
 }
 
 option:checked {
     font-weight: bold;
+}
+
+input, select, .scheme {
+    cursor: pointer;
 }
 
 main {
@@ -47,6 +52,7 @@ main {
     display: flex;
     width: 100%;
     box-shadow: 0px 5px 10px -10px inset;
+    position: relative;
 }
 
 .scheme {
@@ -59,4 +65,13 @@ main {
 
 .scheme-color {
     height: 90%;
+}
+
+.tooltip {
+    display: none;
+    font-size: 1rem;
+    color: #242424;
+    /* text-shadow: 0px 0px 5px #111; */
+    background-color: rgb(240, 240, 233);
+    position: fixed;
 }
