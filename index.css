@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,9 @@ body {
 input, select, button {
     font-family: inherit;
     border: none;
-    height: 60%;
+    height: 7em;
+    padding: 1em;
+    min-width: 200px;
 }
 
 select, button {
@@ -19,10 +21,11 @@ select, button {
     border-radius: 6px;
     padding: 0.33em 1em;
     background-color: #fff;
+    flex: 100px 0;
 }
 
 button {
-    font-size: 0.825rem;
+    /* font-size: 0.825rem; */
     cursor: pointer;
 }
 
@@ -42,9 +45,18 @@ main {
 
 .picker {
     display: flex;
-    justify-content: space-evenly;
+    gap: 1em;
     align-items: center;
-    height: 10vh;
+    height: 12em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 890px) {
+    input, select, button {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
 }
 
 .scheme-display {
