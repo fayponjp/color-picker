@@ -29,6 +29,12 @@ button {
     cursor: pointer;
 }
 
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
+
 option:checked {
     font-weight: bold;
 }
